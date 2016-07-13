@@ -75,7 +75,27 @@
 </script>-->
 <!-- google analytics snippet end -->
 
-<body><!-- google analytics PHP -->
+<body>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1747431978870069',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- google analytics PHP -->
     <?php include_once("analyticstracking.php") ?>
     <div class="container"><!-- google analytics PHP end -->
         <!-- ===========================
@@ -87,7 +107,7 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=483376235199121";
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1747431978870069";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
         
@@ -330,19 +350,46 @@
 
 <hr>
 
-<!--<div class="container">
+<div class="container">
 <iframe src="https://docs.google.com/presentation/d/1tHhmgFRmugZJye93me9af5sFC3TW-5gklHphzSE8EXQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
-<hr>-->
+<hr>
 
-<!--<script>
+<script>
   /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .slprev, .slnext,.text {font-size: 11px}
 }
-</script>-->
+</script>
 
+
+<hr>
+
+      <div class="row">
+        <h2>Have a question?</h2>
+        <div class="row">
+          <div class="col-md-4 fea_item wow bounceInUp">
+          <h3><i class="fa fa-facebook"></i><a class=""
+  href="http://m.me/1579124142382008"> Messenge us</a></h3><span>
+            <div class="fb-messengermessageus" 
+            messenger_app_id="1747431978870069" 
+            page_id="1579124142382008"
+            color="blue"
+            size="xlarge">
+            </div></span>
+          </div>
+        </div>
+
+<!--<div class="row">
+  <div class="">
+    <h2>Have a question?</h2>
+    <span>CityHacks is best friend with Facebook bot messenger, Twitter bot and Google Custom Search Engine</span>
+  </div>
+    <div class="col-xs-6"><img class="" src="img/qr-apibot.png" alt=""><a href="http://m.me/1579124142382008"><p>Messenge us</p></a>
+    </div>
+
+</div>-->
 
 <hr>
 
@@ -353,7 +400,7 @@
 
   </div>
 
-<script>
+<!--<script>
   (function() {
     var cx = '002971305045365881636:yva2db15qbs';
     var gcse = document.createElement('script');
@@ -364,7 +411,7 @@
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:search></gcse:search>
+<gcse:search></gcse:search>-->
 
 <div id='cse' style='width: 100%;'>Loading</div>
 <script src='//www.google.com/jsapi' type='text/javascript'></script>
@@ -506,7 +553,7 @@ google.setOnLoadCallback(function() {
 </style>
 
 
-<!-- Facebook Login JavaScript Example-->
+<!-- Facebook Login JavaScript -->
 
 <script>
   // This is called with the results from from FB.getLoginStatus().
@@ -541,7 +588,7 @@ google.setOnLoadCallback(function() {
   }
   window.fbAsyncInit = function() {
   FB.init({
-    appId      : '483376235199121',
+    appId      : '1747431978870069',
     cookie     : true,  // enable cookies to allow the server to access 
                         // the session
     xfbml      : true,  // parse social plugins on this page
@@ -629,7 +676,7 @@ function showSlides(n) {
     =========================== -->
     <footer class="text-center">
         <div class="row">
-            <p>&copy; <a href="">Cityhacks - Designed by <a target="_blank" href="dnzengou.github.io/cvstrap/">E. D.</a>.
+            <p>&copy; <a href="">CityHacks - Designed by <a target="_blank" href="dnzengou.github.io/cvstrap/">E. D.</a>.
             </p>
         </div>
     </footer>
